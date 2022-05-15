@@ -61,11 +61,13 @@ class Director:
         if self.user_point > 0:
            self.user_input = input("Play again? (y/n) ")
            if self.user_input == "n":
-                print("Thank for palying!")
+                print("You have had your fun; the game is done!")
+                print("\U0001F973")
                 self.is_playing = False
         else:
             self.is_playing = False
-            print("Thank for playing!")
+            print("You have had your fun; the game is done!")
+            print("\U0001F973")
         return self.is_playing
 
 director = Director()
